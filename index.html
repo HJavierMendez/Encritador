@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Encriptador-Alura</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body>
+    <main>
+        <section class="section-input">
+            <img src="img/Logo1.png" alt="Logo Alura" class="logo">
+            <div class="div-input">
+
+                <textarea id="text-box" class="text-box" cols="25" rows="15" placeholder="Ingresa tu texto aqui" required></textarea>
+            </div>
+            <div class="div-botones">
+                <div class="exclamation">!</div>
+                <p class="nota"> Solo letras minúsculas y sin acentos</p>
+                <div class="div-btn">
+
+                    <button type="button" onclick="encriptando()" class="encriptar">Encriptar</button>
+                    <button class="desencriptar" onclick="desencriptar()">Desencriptar</button>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="section-output">
+            <h2 class="error" id="error">No se aceptan mayusculas ni signos</h2>
+            <textarea type="text" id="text-box2" class="text-box2" cols="25" rows="15"></textarea>
+            <h2 class="sin-texto" id="sinTexto">Ningún mensaje fue encontrado</h2>
+            <p class="sin-mensaje" id="sinMensaje">Ingresa el texto que desees encriptar o desencriptar.</p>
+
+            <div class="div-output" id="div-output">
+                <button  class="copiar" onclick="copiar()" >Copiar</button>
+
+            </div>
+
+
+
+        </section>
+    </main>
+
+
+</body>
+<footer>
+    <p class="roda-pie">Diseñado por Javier en Curso Alura</p>
+    <script src="cifrado.js"></script>
+</footer>
+
+</html>
